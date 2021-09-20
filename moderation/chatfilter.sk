@@ -1,0 +1,61 @@
+# LendMark.sk - Chat Filter (https://github.com/SlenkyDev)
+# Version: 1.0
+
+function censor(p:player):
+        send "&c&m-----------------------------------------------------" to {_p}
+        send "&cNadávanie a obchádzanie chatového filtru je proti pravidlám." to {_p}
+        send "&cAk sa pokúsiš o obchádzanie filtru, budeš umlčaný/á!" to {_p}
+        send "&c&m-----------------------------------------------------" to {_p}
+
+on chat:
+    if message contains "fuck":
+        cancel event
+        censor(player)
+    if message contains "bitch":
+        cancel event
+        censor(player)
+    if message contains "kokot":
+        cancel event
+        censor(player)
+    if message contains "kurva":
+        cancel event
+        censor(player)
+    if message contains "jebať":
+        cancel event
+        censor(player)
+    if message contains "jebo":
+        cancel event
+        censor(player)
+    if message contains "jebe":
+        cancel event
+        censor(player)
+    if message contains "jebu":
+        cancel event
+        censor(player)
+    if message contains "pica":
+        cancel event
+        censor(player)
+    if message contains "piča":
+        cancel event
+        censor(player)
+    if message contains "píča":
+        cancel event
+        censor(player)
+    if message contains "píčo":
+        cancel event
+        censor(player)
+    if message contains "kurvo":
+        cancel event
+        censor(player)
+    if message contains "jebat":
+        cancel event
+        censor(player)
+    if message contains "retard":
+        cancel event
+        censor(player)
+    if message contains "cigáň":
+        cancel event
+        censor(player)
+    if message contains "cigan":
+        cancel event
+        censor(player)        
