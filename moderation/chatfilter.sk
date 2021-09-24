@@ -1,5 +1,5 @@
 # LendMark.sk - Chat Filter (https://github.com/SlenkyDev)
-# Version: 1.1
+# Version: 1.1.2
 
 function censor(p:player):
         send "&c&m-----------------------------------------------------" to {_p}
@@ -50,12 +50,12 @@ on chat:
     if message contains "nig":
         cancel event
         censor(player)
-   if message contains "neg":
+    if message contains "neg":
         cancel event
         censor(player)
-   if message contains "pici":
+    if message contains "jeb":
         cancel event
-        censor(player)   
-   if message contains "jeb":
+        censor(player) 
+    if message contains "pici":
         cancel event
         censor(player)
