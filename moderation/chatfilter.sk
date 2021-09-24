@@ -1,5 +1,5 @@
 # LendMark.sk - Chat Filter (https://github.com/SlenkyDev)
-# Version: 1.0
+# Version: 1.1
 
 function censor(p:player):
         send "&c&m-----------------------------------------------------" to {_p}
@@ -20,18 +20,6 @@ on chat:
     if message contains "kurva":
         cancel event
         censor(player)
-    if message contains "jebať":
-        cancel event
-        censor(player)
-    if message contains "jebo":
-        cancel event
-        censor(player)
-    if message contains "jebe":
-        cancel event
-        censor(player)
-    if message contains "jebu":
-        cancel event
-        censor(player)
     if message contains "pica":
         cancel event
         censor(player)
@@ -47,9 +35,6 @@ on chat:
     if message contains "kurvo":
         cancel event
         censor(player)
-    if message contains "jebat":
-        cancel event
-        censor(player)
     if message contains "retard":
         cancel event
         censor(player)
@@ -58,4 +43,19 @@ on chat:
         censor(player)
     if message contains "cigan":
         cancel event
-        censor(player)        
+        censor(player)
+    if message contains "nigg":
+        cancel event
+        censor(player) 
+    if message contains "nig":
+        cancel event
+        censor(player)
+   if message contains "neg":
+        cancel event
+        censor(player)
+   if message contains "pici":
+        cancel event
+        censor(player)   
+   if message contains "jeb":
+        cancel event
+        censor(player)
