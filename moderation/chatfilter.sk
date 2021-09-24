@@ -1,7 +1,8 @@
 # LendMark.sk - Chat Filter (https://github.com/SlenkyDev)
-# Version: 1.1.2
+# Version: 1.2
 
 function censor(p:player):
+        play sound "block.anvil.place" with volume 0.5 to {_p}
         send "&c&m-----------------------------------------------------" to {_p}
         send "&cNadávanie a obchádzanie chatového filtru je proti pravidlám." to {_p}
         send "&cAk sa pokúsiš o obchádzanie filtru, budeš umlčaný/á!" to {_p}
