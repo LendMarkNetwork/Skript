@@ -1,0 +1,16 @@
+# LendMark.sk - VIP command (https://github.com/OLIMINATOR)
+# Version: 1.0
+
+command /vip:
+	aliases: /obchod, /ranky, /nakup, /prefix, /tokeny, /kupit, /nakupovat, /rank, /kupovat
+	trigger:
+		play sound "block.amethyst_block.step" with volume 50.0 to the player
+		send title "&e&lObchod" with subtitle "&fstore.lendmark.sk" to player for 5 seconds
+		message " "
+		message " "
+		message " "
+		message " &e&nDoplnky si môžeš zakúpiť v našom obchode:"
+		message "<link:https://store.lendmark.sk> &7store.lendmark.sk<reset>"
+		message " "
+		message " "
+		message " "
