@@ -1,0 +1,21 @@
+# LendMark.sk - LockDown (https://github.com/OLIMINATOR)
+# Version: 1.0
+
+command /lockdownon:
+	permission: admin.lockdown
+	permission message: "&8» &cNemáš permisie!"
+	trigger:
+		set {lockdownsystem} to true
+		loop all players:
+			if loop-player has permission "admin.lockdown":
+				send "&8» &aPráve začala krátka údržba!" to loop-player
+			else:
+				broadcast "&f » &7Hráč &f%player% &7sa pokúsil pripojiť počas údržby!"
+				kick the loop-player due to "&cNa serveri prebieha krátka údržba!"
+
+command /lockdownoff:
+	permission: admin.lockdown
+	permission message: "&8» &cNemáš permisie!"
+	trigger:
+		delete {lockdownsystem} 
+		broadcast "&8» &aÚržba skončila!"
